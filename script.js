@@ -23,3 +23,20 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolling');
     }
 });
+
+// Giỏ hàng
+document.addEventListener('DOMContentLoaded', function() {
+  const cartIcon = document.querySelector('.header-icons .fa-shopping-cart');
+  
+  if (cartIcon) {
+      cartIcon.parentElement.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          document.body.style.opacity = '0';
+          
+          setTimeout(function() {
+              window.location.href = 'cart.html';
+          }, 500);
+      });
+  }
+});

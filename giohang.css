@@ -1,0 +1,111 @@
+/* Reset một số styles mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles cho header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-right {
+    display: flex;
+    gap: 30px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.header-right a:hover {
+    color: #3b49df;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: #3b49df;
+}
+
+/* Styles cho nội dung chính */
+.cart-content {
+    margin-top: 100px; /* Để tránh bị che bởi header fixed */
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    .header-icons {
+        margin-top: 15px;
+    }
+
+    .cart-content {
+        margin-top: 150px; /* Điều chỉnh khoảng cách cho mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-left {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .header-right a {
+        font-size: 14px;
+    }
+}

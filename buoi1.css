@@ -433,3 +433,8 @@ body {
   color: #333333;
   margin: 0;
 }
+
+.header-icons a {
+  color: inherit; /* Kế thừa màu từ phần tử cha */
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
