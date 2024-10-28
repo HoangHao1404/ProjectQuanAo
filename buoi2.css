@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    width: 250px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+/*Lước trang*/
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.header-right a:hover {
+  color: #3b49df;
+}
+/*Kéo xuống*/
+.header {
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.header.scrolling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Đặt màu nền khi cuộn */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng */
+    z-index: 1000; /* Đảm bảo thanh điều hướng nằm trên các phần tử khác */
+}
